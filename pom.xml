@@ -1,15 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mycompany.app</groupId>
-	<artifactId>hello-world-war</artifactId>
-	<version>1.0.0-${env.BUILD_NUMBER}</version>
+	<groupId>com.saravanancompany.app</groupId>
+	<artifactId>saravanan-app-war</artifactId>
+	<version>1.0.3-${env.BUILD_NUMBER}</version>
 	<packaging>war</packaging>
 	<name>Hello World Web Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
     <properties>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
 
 	<build>
@@ -25,25 +25,25 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.1.1</version>
+				<version>3.4.0</version>
 			</plugin>
 		</plugins>
 	</build>
  <repositories>
     <repository>
-      <id>java-maven-app-group</id>
-      <url>http://172.31.29.97:8081/repository/java-maven-app-group/</url>
+      <id>java-maven-war-appD-group</id>
+      <url>http://172.31.13.211:8081/repository/java-maven-war-appD-group/</url>
     </repository>
   </repositories>
 
     <distributionManagement>
     <snapshotRepository>
-      <id>java-maven-app-snapshot</id>
-      <url>http://172.31.29.97:8081/repository/java-maven-app-snapshot/</url>
+      <id>java-maven-war-appD-snapshot</id>
+      <url>http://172.31.13.211:8081/repository/java-maven-war-appD-snapshot/</url>
     </snapshotRepository>
     <repository>
-      <id>java-maven-app-release</id>
-      <url>http://172.31.29.97:8081/repository/java-maven-app-release/</url>
+      <id>java-maven-war-appD-release</id>
+      <url>http://172.31.13.211:8081/repository/java-maven-war-appD-release/</url>
     </repository>
   </distributionManagement>
 </project>
