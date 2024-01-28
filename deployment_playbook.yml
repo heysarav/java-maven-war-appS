@@ -4,10 +4,10 @@
   become: true
   vars:
     nexus_url: http://ec2-18-143-190-178.ap-southeast-1.compute.amazonaws.com:8081/repository
-    repository_type: java-maven-war-appD-release
+    repository_type: java-maven-war-appS-release
     group_id: com%2Fsaravanancompany%2Fapp
     artifact_id: saravanan-app-war
-    version: 1.0.3
+    version: 1.0.4
     build_number: "{{build_number}}"
   tasks:
   - name: Download file from a file path
@@ -25,5 +25,3 @@
 
   - name: remove the artifact
     ansible.builtin.shell: rm -rf /home/ec2-user/faangler.war
-
-
