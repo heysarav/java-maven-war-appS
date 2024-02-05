@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.saravanancompany.app</groupId>
-	<artifactId>saravanan-app-war</artifactId>
-	<version>1.0.4</version>
+	<groupId>com.mycompany.app</groupId>
+	<artifactId>hello-world-war</artifactId>
+	<version>1.0.3-${env.BUILD_NUMBER}</version>
 	<packaging>war</packaging>
 	<name>Hello World Web Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
@@ -32,18 +32,18 @@
  <repositories>
     <repository>
       <id>java-maven-war-appD-group</id>
-      <url>http://172.31.13.211:8081/repository/java-maven-war-appD-group/</url>
+      <url>http://172.31.32.114:8081/repository/java-maven-war-appD-group/</url>
     </repository>
   </repositories>
 
     <distributionManagement>
     <snapshotRepository>
       <id>java-maven-war-appD-snapshot</id>
-      <url>http://172.31.13.211:8081/repository/java-maven-war-appD-snapshot/</url>
+      <url>http://172.31.32.114:8081/repository/java-maven-war-appD-snapshot/</url>
     </snapshotRepository>
     <repository>
       <id>java-maven-war-appD-release</id>
-      <url>http://172.31.13.211:8081/repository/java-maven-war-appD-release/</url>
+      <url>http://172.31.32.114:8081/repository/java-maven-war-appD-release/</url>
     </repository>
   </distributionManagement>
 </project>
