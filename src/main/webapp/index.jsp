@@ -7,6 +7,7 @@
 	<h1>Hello World!</h1>
 	<h1>DevOps Training - Nov 2023 Batch</h1>
 	<h1>This is demo for November devops</h1>
+	<h1>This is an webhook trigger</h1>
 	<p>
 		It is now
 		<%= new java.util.Date() %></p>
